@@ -17,4 +17,4 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## App Screenshots
-?[screenshot] (/images/Screenshot_1.jpg)
+<img src = "images/Screenshot_1.jpg" height=600> <img src = "images/Screenshot_2.jpg" height=600> <img src = "images/Screenshot_3.jpg" height=600>
