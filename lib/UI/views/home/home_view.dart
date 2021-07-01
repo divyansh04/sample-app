@@ -66,7 +66,7 @@ class _HomeViewState extends State<HomeView> {
                   child: TextField(
                     controller: _textFieldController,
                     decoration: InputDecoration(
-                      hintText: "Search Profiles",
+                      hintText: "Search",
                       prefixIcon: Icon(Icons.search),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
