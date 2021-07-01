@@ -48,11 +48,14 @@ class _HomeViewState extends State<HomeView> {
     context.watch<HomeModel>().getItem();
 
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text('Landing Page'),
       ),
-      body: Column(
+      body: ListView(
+        physics: ClampingScrollPhysics(),
+        shrinkWrap: true,
         children: [
           Padding(
             padding: EdgeInsets.only(
@@ -126,6 +129,7 @@ class _HomeViewState extends State<HomeView> {
                         )),
                       )
                     : ListView.builder(
+                        physics: ClampingScrollPhysics(),
                         shrinkWrap: true,
                         itemCount: model.inventoryList.length,
                         itemBuilder: (context, index) {
